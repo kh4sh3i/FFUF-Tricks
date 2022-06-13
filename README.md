@@ -1,5 +1,6 @@
-![contributions welcome](./img/contributions.svg) <a href="https://twitter.com/kh4sh3i">
-    <img src="https://img.shields.io/badge/author-@kh4sh3i-orange.svg?style=square&logo=twitter">
+![contributions welcome](./img/contributions.svg) 
+<a href="https://twitter.com/kh4sh3i_">
+    <img src="https://img.shields.io/twitter/follow/kh4sh3i_?style=social">
   </a>
   
   
