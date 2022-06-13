@@ -19,8 +19,7 @@ Ffuf(fuzz faster u fool) is a great tool used for fuzzing. It has become really 
 
 Option name: -w
 
-Use wordlist on ffuf for more affectively fuzzing. I use SecLists-master for example. You can choose yours. I have my own for dir brute forcing you can find it on https://github.com/tamimhasan404/wordlist.git
-
+Use wordlist on ffuf for more affectively fuzzing. I use SecLists-master for example.
 ```
 ./ffuf -w /root/Desktop/SecLists-master/Discovery/Web-Content/raft-large-directories.txt -u https://xyz.com/FUZZ
 ```
@@ -29,7 +28,7 @@ Use wordlist on ffuf for more affectively fuzzing. I use SecLists-master for exa
 
 ## Fuff with all domain
 
-This is a common problem for beginners that they don’t know how to use fuff in all of their collected subdomains as fuff has no default option for list of domains like dirsearch. So here is something for you which I found in https://twitter.com/0xJin tweet.
+This is a common problem for beginners that they don’t know how to use fuff in all of their collected subdomains as fuff has no default option for list of domains like dirsearch.
 
 ```
 cat live.txt | xargs -I@ sh -c 'ffuf -w wordlists.txt -u @/FUZZ -mc 200'
@@ -98,7 +97,8 @@ Choose one -of json, ejson, html, md, csv
 I generally use | tee for result output. But if you want to get output on GUI(graphical user interface) for your better understand/client demand then your CM is.
 
 ```
-./ffuf -w /root/Desktop/SecLists-master/Discovery/Web-Content/raft-large-directories.txt -u https://xyz.com/FUZZ -of html -o ffuf-result
+./ffuf -w /root/Desktop/SecLists-master/Discovery/Web-Content/raft-large-directories.txt -u https://xyz.com/FUZZ -of html -o result
+./ffuf -w /root/Desktop/SecLists-master/Discovery/Web-Content/raft-large-directories.txt -u https://xyz.com/FUZZ | tee result.txt
 ```
 
 ## Subdomain Enumeration
@@ -132,22 +132,18 @@ rate 2 means two requests per second. You can also customize the number.
 
 
 
-- Here are some other useful options on ffuf:
+#### Here are some other useful options on ffuf:
 
-timeout → HTTP request timeout in seconds (default: 10)
-
--V → Show version information (default: false/off)
-
--t → Number of concurrent threads(default: 40)
-
--v → Verbose/details output,printing full URL and redirect location (if any) with the results (default:false/off)
-
--mc → Match HTTP status codes, or "all" for everything (default: 200,204,301,302,307,401,403)
-
-mode → Multi-wordlist operation mode.Available modes: clusterbomb, pitchfork (default: clusterbomb(1 to 1,2 to 2)
+* timeout → HTTP request timeout in seconds (default: 10)
+* -V → Show version information (default: false/off)
+* -t → Number of concurrent threads(default: 40)
+* -v → Verbose/details output,printing full URL and redirect location (if any) with the results (default:false/off)
+* -mc → Match HTTP status codes, or "all" for everything (default: 200,204,301,302,307,401,403)
+* mode → Multi-wordlist operation mode.Available modes: clusterbomb, pitchfork (default: clusterbomb(1 to 1,2 to 2)
 
 Thank you💕 
 
-### To dig deep
+### Reffrence
+[ffuf](https://github.com/ffuf/ffuf)
   
 
