@@ -1,5 +1,5 @@
 ![contributions welcome](./img/contributions.svg) <a href="https://twitter.com/kh4sh3i">
-    <img src="./img/author.svg">
+    <img src="https://img.shields.io/badge/author-@kh4sh3i-orange.svg?style=square&logo=twitter">
   </a>
   
   
