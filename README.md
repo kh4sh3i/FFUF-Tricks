@@ -130,7 +130,7 @@ rate 2 means two requests per second. You can also customize the number.
 
 
 
-#### Here are some other useful options on ffuf:
+### Here are some other useful options on ffuf:
 
 * timeout → HTTP request timeout in seconds (default: 10)
 * -V → Show version information (default: false/off)
@@ -139,9 +139,8 @@ rate 2 means two requests per second. You can also customize the number.
 * -mc → Match HTTP status codes, or "all" for everything (default: 200,204,301,302,307,401,403)
 * mode → Multi-wordlist operation mode.Available modes: clusterbomb, pitchfork (default: clusterbomb(1 to 1,2 to 2)
 
-Thank you💕 
 
-### Reffrence
+#### Reffrence
 [ffuf](https://github.com/ffuf/ffuf)
   
 
